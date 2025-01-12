@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="banner.png" alt="Space Banner" class="banner-image">
+  <div class="space-background">
+    <div class="star"></div>
+    <div class="todo-container">
+      <div class="todo-list">
+        <h2>My To-Do List</h2>
+
+        <!-- Filter by Category -->
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterTasks()">
+          <option value="all">All</option>
+          <option value="Research">Research</option>
+          <option value="Repair">Repair</option>
+          <option value="Rescue">Rescue</option>
+          <option value="Return">Return</option>
+        </select>
+
+        <div class="tasks"></div>
+
+        <input type="text" id="task-input" placeholder="Enter new task">
+        <select id="task-category">
+          <option value="Research">Research</option>
+          <option value="Repair">Repair</option>
+          <option value="Rescue">Rescue</option>
+          <option value="Return">Return</option>
+        </select>
+        <button class="add-task-btn">Add Task</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
